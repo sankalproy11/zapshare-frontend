@@ -8,11 +8,11 @@ import {
   Paper,
   Grid,
 } from "@mui/material";
-import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 
 // Assuming you have an image named 'send-icon.png' in your project's 'public' directory or a similar accessible place
-const sendIconUrl = "src/assets/send2.png"; // Update this path to where your actual image is located
+const sendIconUrl = "src/assets/send3.png"; // Update this path to where your actual image is located
 
 const FileTransfer = () => {
   return (
@@ -37,11 +37,11 @@ const FileTransfer = () => {
                 py: 12,
                 color: "black",
                 backgroundColor: "background.paper",
-                opacity: 0.7, // Set the opacity to 0.8
+                opacity: 1, // Set the opacity to 0.8
                 "&:hover": {
                   backgroundColor: "background.paper",
                   boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.12)",
-                  opacity: 1, // Reset opacity on hover if needed
+                  opacity: 0.7, // Reset opacity on hover if needed
                 },
                 borderRadius: "25px",
                 border: "0px solid white",
