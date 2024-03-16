@@ -11,15 +11,20 @@ import {
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 
+// Assuming you have an image named 'send-icon.png' in your project's 'public' directory or a similar accessible place
+const sendIconUrl = "src/assets/send2.png"; // Update this path to where your actual image is located
+
 const FileTransfer = () => {
   return (
     <Container component="main" maxWidth="sm" sx={{ mt: 8, mb: 6 }}>
       <Paper
-        variant="outlined"
+        elevation={4}
         sx={{
           my: { xs: 3, md: 6 },
           p: { xs: 2, md: 3 },
-          bgcolor: "background.default",
+          borderRadius: "25px",
+          bgcolor: "background.paper",
+          border: "3px solid white",
         }}
       >
         <Grid container spacing={5} alignItems="flex-end">
@@ -27,21 +32,50 @@ const FileTransfer = () => {
             <Button
               fullWidth
               variant="contained"
-              startIcon={<AddCircleOutlineIcon />}
               size="large"
-              sx={{ py: 3 }}
+              sx={{
+                py: 12,
+                color: "black",
+                backgroundColor: "background.paper",
+                opacity: 0.7, // Set the opacity to 0.8
+                "&:hover": {
+                  backgroundColor: "background.paper",
+                  boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.12)",
+                  opacity: 1, // Reset opacity on hover if needed
+                },
+                borderRadius: "25px",
+                border: "0px solid white",
+                marginBottom: "10px",
+                backgroundImage: `url(${sendIconUrl})`,
+                backgroundSize: "150px 150px", // Match your image size
+                backgroundPosition: "center", // Center the background image
+                backgroundRepeat: "no-repeat", // Prevent the image from repeating
+              }}
             >
-              Send
+              {/* <img
+                src={sendIconUrl}
+                alt="Send"
+                style={{ width: 400, height: 210 }}
+              /> */}
             </Button>
           </Grid>
           <Grid item xs={12}>
             <TextField
               fullWidth
               variant="outlined"
-              placeholder="Input key"
+              placeholder="Enter OTP"
+              sx={{ borderRadius: "25px" }}
               InputProps={{
                 endAdornment: (
-                  <Button variant="contained">
+                  <Button
+                    variant="contained"
+                    sx={{
+                      borderRadius: "15px",
+                      color: "black",
+                      backgroundColor: "white",
+                      "&:hover": { backgroundColor: "grey" },
+                    }}
+                  >
                     <CloudDownloadIcon />
                   </Button>
                 ),
