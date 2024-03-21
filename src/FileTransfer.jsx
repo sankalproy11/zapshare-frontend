@@ -19,7 +19,7 @@ import {
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import axios from "axios";
 
-const sendIconUrl = "../public/assets/send3.png"; // Ensure this path is correct
+const sendIconUrl = "/assets/send3.png"; // Ensure this path is correct
 
 const FileTransfer = () => {
   const theme = useTheme();
