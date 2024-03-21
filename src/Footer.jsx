@@ -13,7 +13,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import logo from "./assets/zapshare-logo-black.png";
+import logo from "../public/assets/zapshare-logo-black.png";
 
 const Footer = () => {
   return (

@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
-import logo from "./assets/zapshare-logo-white.png";
+import logo from "../public/assets/zapshare-logo-white.png";
 
 const Navbar = () => {
   const theme = useTheme();
