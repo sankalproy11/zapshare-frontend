@@ -134,6 +134,12 @@ const FileTransfer = () => {
                   backgroundSize: "150px 150px",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
+                  opacity: isUploading ? 0.5 : 1,
+                  "&:hover": {
+                    backgroundColor: "background.paper",
+                    boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.12)",
+                    opacity: 0.7, // Reset opacity on hover if needed
+                  },
                 }}
               >
                 {isUploading ? <CircularProgress /> : null}
